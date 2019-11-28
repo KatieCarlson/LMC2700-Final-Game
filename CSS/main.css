@@ -1,4 +1,5 @@
 html, body {
+	/* Important for Spacing of Child Elements */
 	height: 100%;
 	margin: 0;
 }
@@ -25,6 +26,7 @@ main {
 	/* Restricts width of the image */
     max-width: 1000px;
 	
+	/* Sets Spacing for Content Block */
 	height: 85%;
 	width: 85%;
 	
@@ -34,6 +36,7 @@ main {
     margin-left: auto;
     margin-right: auto;
 	
+	/* Creates Flex-Box Spacing for everything inside main Content Blcok */
 	display: flex;
 	flex-direction: column;
   	align-items: center;
@@ -44,6 +47,7 @@ main {
 	/* The image used */
 	background-image: url('../Images/img1.jpg'); 
 	
+	/* Creates a little breathing room from the iamges and the sides of the block */
 	width: 95%;
 	height: 80%;
 
@@ -55,8 +59,13 @@ main {
 }
 
 .interface {
+	/* Sets the interface to the bottom of the content block */
 	height: 10%;
 	align-self: flex-end;
+	
+	/* Creates a little breathing room from the sides of the content block */
+	padding-left: 30px;
+	padding-right: 30px;
 }
 
 h1 {
@@ -67,7 +76,6 @@ h1 {
 
 p {
     color: #0b3880;
-	padding: 10px;
 	margin: auto;
 	text-align: center;
 }
