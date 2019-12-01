@@ -3,22 +3,7 @@ var j1_deciding = false;
 function j1option1over() {
 	var imgBox = document.getElementById("imageSpace");
 	var newImgSrc = document.createElement("img");
-	newImgSrc.setAttribute('src', '../Images/journal1_image1.jpg');
-	newImgSrc.setAttribute('alt', 'ImageDescriptionHere');
-	newImgSrc.style.width = '100%';
-	
-	if (!j1_deciding) {
-		imgBox.replaceChild(newImgSrc, imgBox.childNodes[1]);
-	}
-}
-
-function j1option2over() {
-	var imgBox = document.getElementById("imageSpace");
-	var newImgSrc = document.createElement("img");
-	
-	//Change the SRC to set the image
-	newImgSrc.setAttribute('src', '../Images/journal1_image2.jpg');
-	
+	newImgSrc.setAttribute('src', '../Images/cutSceneBeg2.png');
 	newImgSrc.setAttribute('alt', 'ImageDescriptionHere');
 	newImgSrc.style.width = '100%';
 	
@@ -32,7 +17,7 @@ function j1out() {
 	var newImgSrc = document.createElement("img");
 	
 	//Change the SRC to set the image
-	newImgSrc.setAttribute('src', '../Images/journal1_original.jpg');
+	newImgSrc.setAttribute('src', '../Images/cutSceneBeg1.png');
 	
 	newImgSrc.setAttribute('alt', 'ImageDescriptionHere');
 	newImgSrc.style.width = '100%';

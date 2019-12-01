@@ -1,95 +1,55 @@
-<!doctype html>
-<html>
-<head>
-<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
-<script type="text/javascript" src="../JS/turn.min.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale: 1.0">  
+<!DOCTYPE HTML> 
+<html lang="en" class="content-wrap">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale: 1.0">  
         <meta charset="utf-8"> 
         <meta name="online game with a journal like GUI created through HTML, CSS, and JavaScript" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="styles.css">
         <title>Color Blind</title>
+		
 		<script type="text/javascript" src="JS/clickables.js"></script>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+		<script type="text/javascript" src="../JS/turn.min.js"></script>
+    </head>
 
-<style type="text/css">
-/*
-body{
-	background:#ccc;
-    text-align: center;
-    margin-left: 12em;
-}
-*/
-/*
-#magazine{
-	width:200px;
-	height:200px;
-}
-*/
-#magazine .turn-page{
-	background-color:#ccc;
-	background-size:100% 100%;
-}
-</style>
-</head>
-<body>
+	<style type="text/css">
+		
+		#magazine .turn-page{
+			background-color:#ccc;
+			background-size:100% 100%;
+		}
+		
+	</style>
+	
+	<body>
 
- <main>
-            <header id="grad1"> 
-                <h1> Journal Entry </h1>
-                <h2> 11/30/2019 </h2>
-            </header>
-        
-            <div class="container"> 
-                <!--SQUARE IMAGE-->
-                <section class="imgBox" id="imageSpace"> 
-                    <img src="../Images/journal1_original.jpg" alt="ImageDescriptionHere" width="100%">
-					<div style="visibility: hidden;" id="options">
-						<a onClick="j1option1();" style="cursor: pointer;"><div class="option" style="top:15%">
-							<p style="text-align: center; padding: 20px">Maybe she was looking at something behind me?</p>
-						</div></a>
-						<a onClick="j1option2();" style="cursor: pointer;"><div class="option" style="top:55%">
-							<p style="text-align: center; padding: 20px"> Why'd she smile at me? Could it be....?</p>
-						</div></a>
-					</div>
-                </section>   
-                
-                <div id="magazine">
-	<div>
-                    <h2> Entry I: A Break From the Usual Routine</h2>
-                    <p> Strange day today. Began like yesterday, walked to school late, doodled for most of the day, and ate alone at lunch again. The usual routine. Really nothing to write home about honestly. What makes today a little different is something that happened after class.
- Let’s set the scene: Class is out, everyone’s heading home, and I’m out by the far pillar on the blacktop, working on my bullet journal for this month and waiting on the buses to finally pull up. Just another day, right? Doesn’t seem so. Today it seems my lonely little corner of the blacktop had some visitors. A couple of girls who looked like they wanna trade secrets or something asinine like that. At least, that’s what I assumed. But then I thought I heard my name, and I had to turn around and see what was going on. Then I saw her.
-Maybe it was just me, but I think my heart stopped for a moment. There was something different about her, I can’t really put my finger on it. Either way, she saw me staring at her and smiled at me. <a onClick="j1options();" style="cursor: pointer; cursor: hand; color:dimgray; " id="option">___________</a> I can’t really say, considering my state of mind, but I think I smiled at her, which is rare. Regardless, I have some things to think about tonight. What is this twisting in my stomach when I think of her? Why can’t I get her out of my head? What’d she mention my name for? 
-Why can’t I get this dumb grin off my face?
-                        <span style="background-color:#bbede8">
-					<a onmouseover="j1option1over();" onmouseout="j1out();" style="cursor: pointer;">(hover mouse to see dog picture)</a></span>
-
-					<span style="background-color:#bbede8">
-					<a onmouseover="j1option2over();" onmouseout="j1out();"style="cursor: pointer;">(hover mouse to see cat picture)</a></span>
-</p>
-                </div>
-	<div style="background-image:url(pages/02.jpg);"></div>
-	<div style="background-image:url(pages/03.jpg);"></div>
-	<div style="background-image:url(pages/04.jpg);"></div>
-	<div style="background-image:url(pages/05.jpg);"></div>
-	<div style="background-image:url(pages/06.jpg);"></div>
-</div>
-
-                <!-- Main buttons at bottom of GUI-->
+		<main>
+            
+			<div class="container"> 
+			<div id="magazine">
+				<div style="background-image:url(introImages/01.jpg);"></div>
+				<div style="background-image:url(introImages/02.jpg);"></div>
+				<div style="background-image:url(introImages/02.jpg);"></div>
+				<div style="background-image:url(introImages/03.jpg);"></div>
+				<div style="background-image:url(introImages/04.jpg);"></div>
+				<div style="background-image:url(introImages/05.jpg);"></div>
+				<div style="background-image:url(introImages/06.jpg);"></div>
+			</div>
+			
+			<!-- Main buttons at bottom of GUI-->
             <nav> 
                 <div class="button-group">
                     <li><a id="button1" class="button big icon arrowleft" onclick='flip(this);'> Back </a></li>
                     <li><a id="button2" class="button big icon arrowright" onclick='flip(this);'> Next </a></li>
                 </div> 
             </nav>
-                
-                
-                
-                
-			</div>                   
-            
+			</div>
+				
         </main>
-    <!--Footer-->
+    	
+		<!--Footer-->
         <footer>
-            <p> Copyright of Loopy Potatoes&copy; 2019 </p>
+            <p> Copyright of Loopy Potatoes &copy; 2019 </p>
         </footer>
 </body>
 </html>
