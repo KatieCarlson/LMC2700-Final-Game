@@ -64,7 +64,7 @@ function j1option1() {
 	j1_deciding = false;
 	options.style.visibility = "hidden";
 	
-	document.getElementById("option").innerHTML = "<b>option 1</b>";
+	document.getElementById("option").innerHTML = "<b>Maybe she was looking at something behind me?</b>";
 	
 	j1out();
 }
@@ -73,7 +73,44 @@ function j1option2() {
 	j1_deciding = false;
 	options.style.visibility = "hidden";
 	
-	document.getElementById("option").innerHTML = "<b>option 2</b>";
+	document.getElementById("option").innerHTML = "<b> Why'd she smile at me? Could it be....?</b>";
 	
 	j1out();
 }
+
+$(window).ready(function() {
+		$('#magazine').turn({
+							display: 'single',
+							acceleration: true,
+							gradients: !$.isTouch,
+							elevation:50,
+							when: {
+								turned: function(e, page) {
+									/*console.log('Current view: ', $(this).turn('view'));*/
+								}
+							}
+						});
+	});
+	
+	
+	$(window).bind('keydown', function(e){
+		
+//		if (e.keyCode==37)
+//			$('#magazine').turn('previous');
+//		else if (e.keyCode==39)
+//			$('#magazine').turn('next');
+        document.getElementById('button1').onclick = function() {
+                $('#magazine').turn('previous');};
+        document.getElementById('button2').onclick = function() {
+                $('#magazine').turn('next');};
+			
+	});
+                    
+    function flip(source){
+        // Trigger the id of the element that was clicked
+        if(source.id == 'button2') {
+            $('#magazine').turn('next');
+        } else {
+            $('#magazine').turn('previous');
+        }
+    };
