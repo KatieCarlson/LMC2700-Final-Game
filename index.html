@@ -1,55 +1,61 @@
-<!DOCTYPE HTML> 
-<html lang="en" class="content-wrap">
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale: 1.0">  
+<!doctype html>
+<html>
+<head>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="../JS/turn.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale: 1.0">  
         <meta charset="utf-8"> 
         <meta name="online game with a journal like GUI created through HTML, CSS, and JavaScript" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="indexStyles.css">
         <title>Color Blind</title>
-		
 		<script type="text/javascript" src="JS/clickables.js"></script>
-		<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
-		<script type="text/javascript" src="../JS/turn.min.js"></script>
-    </head>
 
-	<style type="text/css">
-		
-		#magazine .turn-page{
-			background-color:#ccc;
-			background-size:100% 100%;
-		}
-		
-	</style>
-	
-	<body>
+<style type="text/css">
+body{
+	background:#ccc;
+    text-align: center;
+    margin: 0px;
+}
+#magazine{
+/*	width:200px;*/
+	height:650px;
+}
+#magazine .turn-page{
+	background-color:#ccc;
+	background-size:100% 100%;
+}
+</style>
+</head>
+<body>
 
-		<main>
-            
-			<div class="container"> 
-			<div id="magazine">
-				<div style="background-image:url(introImages/01.jpg);"></div>
-				<div style="background-image:url(introImages/02.jpg);"></div>
-				<div style="background-image:url(introImages/02.jpg);"></div>
-				<div style="background-image:url(introImages/03.jpg);"></div>
-				<div style="background-image:url(introImages/04.jpg);"></div>
-				<div style="background-image:url(introImages/05.jpg);"></div>
-				<div style="background-image:url(introImages/06.jpg);"></div>
-			</div>
-			
-			<!-- Main buttons at bottom of GUI-->
+ <main>
+        
+            <div class="container">    
+                
+                <div id="magazine">
+	<div style="background-image:url(Images/titleScreen.png);"></div>
+	<div style="background-image:url(Images/cutSceneBeg1.png);"></div>
+	<div style="background-image:url(Images/cutSceneBeg2.png);"></div>
+                    
+</div>
+
+                <!-- Main buttons at bottom of GUI-->
             <nav> 
                 <div class="button-group">
                     <li><a id="button1" class="button big icon arrowleft" onclick='flip(this);'> Back </a></li>
                     <li><a id="button2" class="button big icon arrowright" onclick='flip(this);'> Next </a></li>
                 </div> 
             </nav>
-			</div>
-				
+                
+                
+                
+                
+			</div>                   
+            
         </main>
-    	
-		<!--Footer-->
+    <!--Footer-->
         <footer>
-            <p> Copyright of Loopy Potatoes &copy; 2019 </p>
+            <p> Copyright of Loopy Potatoes&copy; 2019 </p>
         </footer>
 </body>
 </html>
