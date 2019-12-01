@@ -54,7 +54,7 @@ header h2 {
 	position: relative;
 }
 
-p {
+p, a {
 	line-height: 150%;
 	font-size: 20px;
 }
