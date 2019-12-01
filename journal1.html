@@ -5,45 +5,41 @@
         <meta charset="utf-8"> 
         <meta name="online game with a journal like GUI created through HTML, CSS, and JavaScript" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="styles.css">
-        <title> Hello Journal!
-        </title>
+        <title>Color Blind</title>
+		<script type="text/javascript" src="JS/clickables.js"></script>
     </head>
-    
-    
     
     <body>
              
 <!--Journal Entry Date-->
         <main>
             <header id="grad1"> 
-                <h1> Hello Journal! </h1>
+                <h1> Journal Entry </h1>
                 <h2> 11/30/2019 </h2>
             </header>
         
             <div class="container"> 
                 <!--SQUARE IMAGE-->
-                <section class="imgBox"> 
-                    <img src="/Images/journal1.png" alt="ImageDescriptionHere">
+                <section class="imgBox" id="imageSpace"> 
+                    <img src="/Images/journal1_original.jpg" alt="ImageDescriptionHere" width="100%">
                 </section>
-            
             
                 <!--TEXT BOX-->
                 <article class="textBox"> 
                     <h2> Title of Journal Page</h2>
-                    <p> I write interesting things here... </p>
-                </article>  
-            </div>
+                    <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+						
+					<span style="background-color:#adfff9">
+					<a onmouseover="j1option1over();" onmouseout="j1out();" style="cursor: pointer; cursor: hand;">(hover mouse to see dog picture)</a></span>
+						
+					It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 
-            
-<!-- Main buttons at bottom of GUI-->
-            <nav> 
-                <div class="button-group">
-                    <li><a class="button big icon arrowleft"> Back </a></li>
-                    <li><a class="button big icon arrowright"> Next </a></li>
-                </div> 
-            </nav>
-                       
-            
+					<span style="background-color:#adfff9">
+					<a onmouseover="j1option2over();" onmouseout="j1out();"style="cursor: pointer; cursor: hand;">(hover mouse to see cat picture)</a></span>
+						
+					It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                </article>  
+			</div>                   
             
         </main>
         
@@ -52,6 +48,15 @@
         
 <!--Footer-->
         <footer>
+			
+			<!-- Main buttons at bottom of GUI-->
+            <nav> 
+                <div class="button-group">
+                    <li><a class="button big icon arrowleft"> Back </a></li>
+                    <li><a class="button big icon arrowright"> Next </a></li>
+                </div> 
+            </nav>
+			
             <p> Copyright of Loopy Potatoes&copy; 2019 </p>
         </footer>
     </body>
