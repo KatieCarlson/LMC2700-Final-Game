@@ -3,7 +3,7 @@ var j1_deciding = false;
 function j1option1over() {
 	var imgBox = document.getElementById("imageSpace");
 	var newImgSrc = document.createElement("img");
-	newImgSrc.setAttribute('src', '../Images/cutSceneBeg2.png');
+	newImgSrc.setAttribute('src', '../Images/cutSceneBeg2.jpg');
 	newImgSrc.setAttribute('alt', 'ImageDescriptionHere');
 	newImgSrc.style.width = '100%';
 	
@@ -17,7 +17,7 @@ function j1out() {
 	var newImgSrc = document.createElement("img");
 	
 	//Change the SRC to set the image
-	newImgSrc.setAttribute('src', '../Images/cutSceneBeg1.png');
+	newImgSrc.setAttribute('src', '../Images/cutSceneBeg1.jpg');
 	
 	newImgSrc.setAttribute('alt', 'ImageDescriptionHere');
 	newImgSrc.style.width = '100%';
