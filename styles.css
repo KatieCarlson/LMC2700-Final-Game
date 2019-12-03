@@ -120,6 +120,12 @@ footer {
     text-align: center;
 }
 
+.noHover{
+    pointer-events: none;
+}
+
+.noHover a:hover { background-color:#fcc }
+
 
 /* ------------------------------------------
  * CSS3 GITHUB BUTTONS (Nicolas Gallagher)
