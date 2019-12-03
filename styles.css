@@ -43,6 +43,12 @@ header h2 {
 	background-color: floralwhite;
 }
 
+.isDisabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+    pointer-events: none; 
+}
+
 .img {
     height: auto; 
     object-fit: cover;

@@ -155,6 +155,8 @@ function j1option1() {
 	options.style.visibility = "hidden";
 	
 	document.getElementById("option").innerHTML = "<b>Maybe she was looking at something behind me?</b>";
+    
+    enableLink(); 
 	
 	j1out();
 }
@@ -164,6 +166,8 @@ function j1option2() {
 	options.style.visibility = "hidden";
 	
 	document.getElementById("option").innerHTML = "<b> Why'd she smile at me? Could it be....?</b>";
+    
+    enableLink(); 
 	
 	j1out();
 }
@@ -173,6 +177,8 @@ function j2option1() {
 	options.style.visibility = "hidden";
 	
 	document.getElementById("option").innerHTML = "<b>Must have really liked the journal.</b>";
+    
+    enableLink(); 
 	
 	j2out();
 }
@@ -182,7 +188,9 @@ function j2option2() {
 	options.style.visibility = "hidden";
 	
 	document.getElementById("option").innerHTML = "<b>Could it be she was impressed by it...?</b>";
-	
+    
+    enableLink(); 
+
 	j2out();
 }
 
@@ -191,7 +199,9 @@ function j3option1() {
 	options.style.visibility = "hidden";
 	
 	document.getElementById("option").innerHTML = "<b>Is this...a flag raising event? </b>";
-	
+    
+    enableLink(); 
+
 	j3out();
 }
 
@@ -200,7 +210,9 @@ function j3option2() {
 	options.style.visibility = "hidden";
 	
 	document.getElementById("option").innerHTML = "<b>Does this mean future dates later? </b>";
-	
+    
+    enableLink(); 
+
 	j3out();
 }
 
@@ -209,7 +221,9 @@ function j4option1() {
 	options.style.visibility = "hidden";
 	
 	document.getElementById("option").innerHTML = "<b>Without a doubt</b>";
-	
+    
+    enableLink(); 
+
 	j4out();
 }
 
@@ -218,7 +232,9 @@ function j4option2() {
 	options.style.visibility = "hidden";
 	
 	document.getElementById("option").innerHTML = "<b>Obviously</b>";
-	
+    
+    enableLink(); 
+
 	j4out();
 }
 
@@ -258,3 +274,20 @@ $(window).ready(function() {
             $('#magazine').turn('previous');
         }
     };
+
+
+// button visibility 
+function disableLink() {
+    var bt2 = document.getElementById('button2'); 
+
+    bt2.parentElement.classList.add('isDisabled');
+    bt2.setAttribute('data-href', bt2.href);
+    bt2.href = '';
+}
+
+function enableLink() {
+    var bt2 = document.getElementById('button2'); 
+
+    bt2.parentElement.classList.remove('isDisabled');
+    bt2.href = bt2.getAttribute('data-href'); 
+}
