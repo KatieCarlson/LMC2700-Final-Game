@@ -1,0 +1,75 @@
+<!DOCTYPE HTML> 
+<html lang="en" class="content-wrap">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale: 1.0">  
+        <meta charset="utf-8"> 
+        <meta name="online game with a journal like GUI created through HTML, CSS, and JavaScript" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+        <title>Color Blind</title>
+		
+		<script type="text/javascript" src="JS/clickables.js"></script>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+		<script type="text/javascript" src="../JS/turn.min.js"></script>
+    </head>
+
+	<style type="text/css">
+
+		#magazine .turn-page{
+			background-color:#ccc;
+		}
+		
+	</style>
+	
+	<body>
+
+		<!-- Journal Entry Date -->
+ 		<main>
+            <header id="grad1"> 
+                <h1> Journal Entry </h1>
+                <h2> 11/30/2019 </h2>
+            </header>
+        
+            <!-- Journal Entry 2 -->
+			<div class="container"> 
+                <!--SQUARE IMAGE-->
+                <section class="imgBox" id="imageSpace"> 
+                    <img src="Images/helpingHerWithItAfterClub.jpg" alt="ImageDescriptionHere" width="100%">
+					<div style="visibility: hidden;" id="options">
+						<a onClick="j3option1();" style="cursor: pointer;"><div class="option" style="top:15%">
+							<p style="text-align: center; padding: 20px">Is this...a flag raising event?</p>
+						</div></a>
+						<a onClick="j3option2();" style="cursor: pointer;"><div class="option" style="top:55%">
+							<p style="text-align: center; padding: 20px">Does this mean future dates later?</p>
+						</div></a>
+					</div>
+                </section>   
+                
+                <!--TEXT BOX-->
+                <article class="textBox"> 
+					
+					<h2>Entry M2: Infatuation</h2>
+                    <p>It’s love. It has to be. It’s terrifying, in a way. There’s this urge deep down inside, screaming at me to tell her, to let her know that these feelings exist. I’m not sure if acting on these feelings is a wise decision, but for now I’m going to just focus on being her friend. Yeah, that sounds good. It seems she’s really taken to bullet journaling, bought a new journal with new pens and everything. (Really happy someone else likes it as much as I do) I’ve been helping her with it after club lately, as a matter of fact. We’ve been hanging out together awfully frequently, come to think of it. In fact, just today, after our journaling session, we decided to walk to the coffee shop to wait for our parents to pick us up. I remembered that she mentioned wanting to go there some time, so I figured killing time there would be a good idea. <span style="background-color:#bbede8">
+                        <a onmouseover="j3option1over();" onmouseout="j3out();"style="cursor: pointer;"> We ordered some coffee, sat down, and fell into a real comfortable silence.</a></span> The kind of silence you’d only see between two friends. It just hit me then, how comfortable being around her felt. Honestly, I could have stayed like that all day. Despite my thoughts, our parents came in due time, and we had to head home. Before that though, she asked me if we could exchange phone numbers, to contact each other outside of school. <a onClick="j1options();" style="cursor: pointer; cursor: hand; color:dimgray; " id="option">___________</a>Needless to say, I came home with a lot to think about. Speaking of which, it’s about time for bed, so I can probably do just that before I sleep, haha. 
+
+</p>
+				
+				</article>
+
+				<!-- Main buttons at bottom of GUI-->
+				<nav> 
+					<div class="button-group">
+						<li><a id="button1" class="button big icon arrowleft" href="journal2.html"> Back </a></li>
+						<li><a id="button2" class="button big icon arrowright" href="journal4.html"> Next </a></li>
+					</div> 
+				</nav>
+                 
+			</div> <!-- End Journal Entry 1 --> 
+			
+        </main>
+    	
+		<!--Footer-->
+        <footer>
+            <p> Copyright of Loopy Potatoes &copy; 2019 </p>
+        </footer>
+</body>
+</html>

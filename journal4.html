@@ -1,0 +1,73 @@
+<!DOCTYPE HTML> 
+<html lang="en" class="content-wrap">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale: 1.0">  
+        <meta charset="utf-8"> 
+        <meta name="online game with a journal like GUI created through HTML, CSS, and JavaScript" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+        <title>Color Blind</title>
+		
+		<script type="text/javascript" src="JS/clickables.js"></script>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+		<script type="text/javascript" src="../JS/turn.min.js"></script>
+    </head>
+
+	<style type="text/css">
+
+		#magazine .turn-page{
+			background-color:#ccc;
+		}
+		
+	</style>
+	
+	<body>
+
+		<!-- Journal Entry Date -->
+ 		<main>
+            <header id="grad1"> 
+                <h1> Journal Entry </h1>
+                <h2> 11/30/2019 </h2>
+            </header>
+        
+            <!-- Journal Entry 2 -->
+			<div class="container"> 
+                <!--SQUARE IMAGE-->
+                <section class="imgBox" id="imageSpace"> 
+                    <img src="Images/recognizedMeAndGreetedMe.jpg" alt="ImageDescriptionHere" width="100%">
+					<div style="visibility: hidden;" id="options">
+						<a onClick="j4option1();" style="cursor: pointer;"><div class="option" style="top:15%">
+							<p style="text-align: center; padding: 20px">Without a doubt</p>
+						</div></a>
+						<a onClick="j4option2();" style="cursor: pointer;"><div class="option" style="top:55%">
+							<p style="text-align: center; padding: 20px">Obviously</p>
+						</div></a>
+					</div>
+                </section>   
+                
+                <!--TEXT BOX-->
+                <article class="textBox"> 
+					
+					<h2>Entry E: Acceptance/Resolve</h2>
+                    <p>Been a while since my last entry. Just need to spill my thoughts here before I make my decision. I really like this girl. No way to avoid that. We’ve been hanging out nearly every day, sometimes working on our journals, other times just being together as friends. And every day, I have to ask myself if it’s the right time to ask her out. I’m sure she’s interested in me...but I keep second-guessing myself. It’s tough, I’m sure she’s interested, but I’m a little scared of losing what we’ve got. <span style="background-color:#bbede8">
+                        <a onmouseover="j4option1over();" onmouseout="j4out();"style="cursor: pointer;">We hang out constantly, we message each other late at night,</a></span> we’re just comfortable around each other, no awkward silences at all... Actually, what am I doing? This is it! I like her, she <a onClick="j1options();" style="cursor: pointer; cursor: hand; color:dimgray; " id="option">___________</a> likes me back, what am I waiting for? No, I’m sick of this anxious back-and-forth between me and myself, I’m asking her out tomorrow. Someone’s gotta confess first, and it might as well be me. Tomorrow, after club for sure. </p>
+				
+				</article>
+
+				<!-- Main buttons at bottom of GUI-->
+				<nav> 
+					<div class="button-group">
+						<li><a id="button1" class="button big icon arrowleft" href="journal3.html"> Back </a></li>
+						<li><a id="button2" class="button big icon arrowright" href="journal4.html"> Next </a></li>
+					</div> 
+				</nav>
+                 
+			</div> <!-- End Journal Entry 1 --> 
+			
+        </main>
+    	
+		<!--Footer-->
+        <footer>
+            <p> Copyright of Loopy Potatoes &copy; 2019 </p>
+        </footer>
+</body>
+</html>
