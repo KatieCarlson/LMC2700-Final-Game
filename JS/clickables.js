@@ -3,6 +3,18 @@ var j1_deciding = false;
 function j1option1over() {
 	var imgBox = document.getElementById("imageSpace");
 	var newImgSrc = document.createElement("img");
+	newImgSrc.setAttribute('src', '../Images/cutSceneBeg1.jpg');
+	newImgSrc.setAttribute('alt', 'ImageDescriptionHere');
+	newImgSrc.style.width = '100%';
+	
+	if (!j1_deciding) {
+		imgBox.replaceChild(newImgSrc, imgBox.childNodes[1]);
+	}
+}
+
+function j1option2over() {
+	var imgBox = document.getElementById("imageSpace");
+	var newImgSrc = document.createElement("img");
 	newImgSrc.setAttribute('src', '../Images/cutSceneBeg2.jpg');
 	newImgSrc.setAttribute('alt', 'ImageDescriptionHere');
 	newImgSrc.style.width = '100%';
@@ -13,6 +25,18 @@ function j1option1over() {
 }
 
 function j2option1over() {
+	var imgBox = document.getElementById("imageSpace");
+	var newImgSrc = document.createElement("img");
+	newImgSrc.setAttribute('src', '../Images/recognizedMeAndGreetedMe.jpg');
+	newImgSrc.setAttribute('alt', 'ImageDescriptionHere');
+	newImgSrc.style.width = '100%';
+	
+	if (!j1_deciding) {
+		imgBox.replaceChild(newImgSrc, imgBox.childNodes[1]);
+	}
+}
+
+function j2option2over() {
 	var imgBox = document.getElementById("imageSpace");
 	var newImgSrc = document.createElement("img");
 	newImgSrc.setAttribute('src', 'Images/interestedInMyBulletJournal.jpg');
@@ -53,7 +77,7 @@ function j1out() {
 	var newImgSrc = document.createElement("img");
 	
 	//Change the SRC to set the image
-	newImgSrc.setAttribute('src', '../Images/cutSceneBeg1.jpg');
+	newImgSrc.setAttribute('src', '../Images/journal1InitImg.jpg');
 	
 	newImgSrc.setAttribute('alt', 'ImageDescriptionHere');
 	newImgSrc.style.width = '100%';
@@ -68,7 +92,7 @@ function j2out() {
 	var newImgSrc = document.createElement("img");
 	
 	//Change the SRC to set the image
-	newImgSrc.setAttribute('src', 'Images/recognizedMeAndGreetedMe.jpg');
+	newImgSrc.setAttribute('src', '../Images/journal2InitImg.jpg');
 	
 	newImgSrc.setAttribute('alt', 'ImageDescriptionHere');
 	newImgSrc.style.width = '100%';
