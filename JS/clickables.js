@@ -312,11 +312,6 @@ $(window).ready(function() {
 	
 	
 	$(window).bind('keydown', function(e){
-		
-//		if (e.keyCode==37)
-//			$('#magazine').turn('previous');
-//		else if (e.keyCode==39)
-//			$('#magazine').turn('next');
         document.getElementById('button1').onclick = function() {
                 $('#magazine').turn('previous');};
         document.getElementById('button2').onclick = function() {
