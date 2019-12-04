@@ -249,6 +249,8 @@ function j4option1() {
 	j1_deciding = false;
 	options.style.visibility = "hidden";
 	
+	j4out();
+	
 	document.getElementById("option").innerHTML = "<b>Without a doubt</b>";
 	
 	ending4 = 1;
@@ -268,12 +270,13 @@ function j4option1() {
 	
     enableLink(); 
 
-	j4out();
 }
 
 function j4option2() {
 	j1_deciding = false;
 	options.style.visibility = "hidden";
+	
+	j4out();
 	
 	document.getElementById("option").innerHTML = "<b>Obviously</b>";
     
@@ -291,8 +294,6 @@ function j4option2() {
 	}
 	
     enableLink2(); 
-
-	j4out();
 }
 
 $(window).ready(function() {
