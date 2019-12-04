@@ -51,6 +51,18 @@ function j2option2over() {
 function j3option1over() {
 	var imgBox = document.getElementById("imageSpace");
 	var newImgSrc = document.createElement("img");
+	newImgSrc.setAttribute('src', 'Images/helpingHerWithItAfterClub.jpg');
+	newImgSrc.setAttribute('alt', 'ImageDescriptionHere');
+	newImgSrc.style.width = '100%';
+	
+	if (!j1_deciding) {
+		imgBox.replaceChild(newImgSrc, imgBox.childNodes[1]);
+	}
+}
+
+function j3option2over() {
+	var imgBox = document.getElementById("imageSpace");
+	var newImgSrc = document.createElement("img");
 	newImgSrc.setAttribute('src', 'Images/weOrderedSomeCoffee.jpg');
 	newImgSrc.setAttribute('alt', 'ImageDescriptionHere');
 	newImgSrc.style.width = '100%';
@@ -107,7 +119,7 @@ function j3out() {
 	var newImgSrc = document.createElement("img");
 	
 	//Change the SRC to set the image
-	newImgSrc.setAttribute('src', 'Images/helpingHerWithItAfterClub.jpg');
+	newImgSrc.setAttribute('src', 'Images/journal3InitImg.jpg');
 	
 	newImgSrc.setAttribute('alt', 'ImageDescriptionHere');
 	newImgSrc.style.width = '100%';
@@ -122,7 +134,7 @@ function j4out() {
 	var newImgSrc = document.createElement("img");
 	
 	//Change the SRC to set the image
-	newImgSrc.setAttribute('src', 'Images/recognizedMeAndGreetedMe.jpg');
+	newImgSrc.setAttribute('src', 'Images/journal4InitImg.jpg');
 	
 	newImgSrc.setAttribute('alt', 'ImageDescriptionHere');
 	newImgSrc.style.width = '100%';
