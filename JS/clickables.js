@@ -290,7 +290,7 @@ function j4option2() {
 		document.getElementById("lastButton").href = "ending2.html";
 	}
 	
-    enableLink(); 
+    enableLink2(); 
 
 	j4out();
 }
@@ -348,14 +348,17 @@ function disableLink() {
     bt3.href = '';
 }
 
+function enableLink2() {
+    var bt2 = document.getElementById('lastButton'); 
+
+    bt2.parentElement.classList.remove('isDisabled');
+    bt2.href = bt2.getAttribute('data-href'); 
+}
+
 function enableLink() {
     var bt2 = document.getElementById('button2'); 
 
     bt2.parentElement.classList.remove('isDisabled');
     bt2.href = bt2.getAttribute('data-href'); 
 	
-	bt2 = document.getElementById('lastButton'); 
-
-    bt2.parentElement.classList.remove('isDisabled');
-    bt2.href = bt2.getAttribute('data-href'); 
 }
