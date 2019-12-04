@@ -263,7 +263,7 @@ function j4option1() {
 		}
 	}
 	if (finalCount > 0) {
-		document.getElementById("lastButton").href = "ending2.html";
+		document.getElementById("lastButton").href = "ending1.html";
 	}
     
 	ending4 = 1;

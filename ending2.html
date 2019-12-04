@@ -30,25 +30,44 @@ body{
 
  <main>
         
-	 <p>ENDING 2</p>
-           
-                <div class="container">    
+            <div class="container">    
                 
                 <div id="magazine">
-	<div style="background-image:url(Images/badEnd.jpg);"></div>
+	<div style="background-image:url(Images/goodEnd.jpg);"></div>
+	<a href = "index.html" style="text-decoration:none" class='noHover'>
+		<p style="color:black; font-size:30px;">
+            <p style="color:black; font-size:30px;">
+			<br/>
+			<em>"Sometimes, there is no happy ending. The hero doesn't get the girl,</em>
+			<br/>
+                <em>and there is no happy ever after. Sometimes, there are no winners."</em>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			<i>... click anywhere in the grey box to return to the beginning ...</i>
+		</p>
+		<div style="background-image:url(Images/optionBG.jpg);"></div>
+	</a>
                     
-		 </div>
-           
-                  <!-- Main buttons at bottom of GUI-->
+</div>
+
+                <!-- Main buttons at bottom of GUI-->
             <nav> 
-					<div class="button-group">
-                        <li><span><a id="lastButton" class="button big icon arrowright" href="index.html"> Next </a></span></li>
-					</div> 
-				</nav>
-                 
-	 </div>
-	 
-	</main>
+                <div class="button-group">
+                    <li><a id="button1" class="button big icon arrowleft" onclick='flip(this);'> Back </a></li>
+                  
+                    <li><a id="button2" class="button big icon arrowright" onclick='flip(this);'> Next </a></li>
+                    
+
+                </div> 
+            </nav>
+                
+                    
+			</div>                   
+            
+        </main>
     <!--Footer-->
         <footer>
             <p> Copyright of Loopy Potatoes&copy; 2019 </p>

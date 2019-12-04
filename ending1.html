@@ -30,23 +30,42 @@ body{
 
  <main>
         
-	 <p>ENDING 1</p>
-	 
-	 <div class="container">    
+            <div class="container">    
                 
                 <div id="magazine">
-	<div style="background-image:url(Images/goodEnd.jpg);"></div>
+	<div style="background-image:url(Images/badEnd.jpg);"></div>
+	<div style="background-image:url(Images/badEnd2.jpg);"></div>
+	<a href = "index.html" style="text-decoration:none" class='noHover'>
+		<p style="color:black; font-size:30px;">
+            <p style="color:black; font-size:30px;">
+			<br/>
+			<em>"Woe to those who assume with but half the story in hand, for surely it shall end in tragedy."</em>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			<i>... click anywhere in the grey box to return to the beginning ...</i>
+		</p>
+		<div style="background-image:url(Images/optionBG.jpg);"></div>
+	</a>
                     
-		 </div>
-           
+</div>
+
                 <!-- Main buttons at bottom of GUI-->
             <nav> 
-					<div class="button-group">
-                        <li><span><a id="lastButton" class="button big icon arrowright" href="index.html"> Next </a></span></li>
-					</div> 
-				</nav>
-                 
-	 </div>
+                <div class="button-group">
+                    <li><a id="button1" class="button big icon arrowleft" onclick='flip(this);'> Back </a></li>
+                  
+                    <li><a id="button2" class="button big icon arrowright" onclick='flip(this);'> Next </a></li>
+                    
+
+                </div> 
+            </nav>
+                
+                    
+			</div>                   
             
         </main>
     <!--Footer-->
