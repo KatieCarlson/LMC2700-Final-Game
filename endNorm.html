@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="../JS/turn.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale: 1.0">  
+        <meta charset="utf-8"> 
+        <meta name="online game with a journal like GUI created through HTML, CSS, and JavaScript" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="indexStyles.css">
+        <title>Color Blind</title>
+		<script type="text/javascript" src="JS/clickables.js"></script>
+
+<style type="text/css">
+body{
+	background:#ccc;
+    text-align: center;
+    margin: 0px;
+}
+#magazine{
+/*	width:200px;*/
+	height:650px;
+}
+#magazine .turn-page{
+	background-color:#ccc;
+	background-size:100% 100%;
+}
+</style>
+</head>
+<body>
+
+ <main>
+        
+            <div class="container">    
+                
+                <div id="magazine">
+	<div style="background-image:url(Images/badEnd.jpg);"></div>
+	<div style="background-image:url(Images/badEnd2.jpg);"></div>
+	<a href = "index.html" style="text-decoration:none" class='noHover'>
+		<p style="color:black; font-size:30px;">
+            <p style="color:black; font-size:30px;">
+			<br/>
+			<em>"Woe to those who assume with but half the story in hand, for surely it shall end in tragedy."</em>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			<i>... click anywhere in the grey box to return to the beginning ...</i>
+		</p>
+		<div style="background-image:url(Images/optionBG.jpg);"></div>
+	</a>
+                    
+</div>
+
+                <!-- Main buttons at bottom of GUI-->
+            <nav> 
+                <div class="button-group">
+                    <li><a id="button1" class="button big icon arrowleft" onclick='flip(this);'> Back </a></li>
+                  
+                    <li><a id="button2" class="button big icon arrowright" onclick='flip(this);'> Next </a></li>
+                    
+
+                </div> 
+            </nav>
+                
+                    
+			</div>                   
+            
+        </main>
+    <!--Footer-->
+        <footer>
+            <p> Copyright of Loopy Potatoes&copy; 2019 </p>
+        </footer>
+</body>
+</html>
