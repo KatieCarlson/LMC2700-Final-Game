@@ -341,11 +341,11 @@ function disableLink() {
     bt2.setAttribute('data-href', bt2.href);
     bt2.href = '';
 	
-	bt2 = document.getElementById('lastButton'); 
+	var bt3 = document.getElementById('lastButton'); 
 
-    bt2.parentElement.classList.add('isDisabled');
-    bt2.setAttribute('data-href', bt2.href);
-    bt2.href = '';
+    bt3.parentElement.classList.add('isDisabled');
+    bt3.setAttribute('data-href', bt2.href);
+    bt3.href = '';
 }
 
 function enableLink() {
