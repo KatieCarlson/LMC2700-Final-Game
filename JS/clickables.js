@@ -251,24 +251,25 @@ function j4option1() {
 	
 	j4out();
 	
+	//enableLink2(); 
+	
 	document.getElementById("option").innerHTML = "<b>Without a doubt</b>";
 	
 	ending4 = 1;
 	
 	// determine ending
 	var finalCount = ending1 + ending2 + ending3 + ending4;
+	alert(finalCount);
 	if (finalCount == 0) {
 		if (Math.floor((Math.random() * 10) + 1) > 5) {
 			finalCount = 1;
 		}
 	}
 	if (finalCount > 0) {
-		document.getElementById("lastButton").href = "ending1.html";
+		document.getElementById("button2").href = "ending2.html";
 	}
     
 	ending4 = 1;
-	
-    enableLink2(); 
 
 }
 
@@ -278,22 +279,24 @@ function j4option2() {
 	
 	j4out();
 	
+	//enableLink2(); 
+	
 	document.getElementById("option").innerHTML = "<b>Obviously</b>";
     
 	ending4 = -1;
 	
 	// determine ending
 	var finalCount = ending1 + ending2 + ending3 + ending4;
+	alert(finalCount);
 	if (finalCount == 0) {
-		if (Math.floor((Math.random() * 10) + 1) > 5) {
+		if (Math.floor((Math.random() * 10) + 1) > 1) {
 			finalCount = 1;
 		}
 	}
 	if (finalCount > 0) {
-		document.getElementById("lastButton").href = "ending2.html";
+		document.getElementById("button2").href = "ending2.html";
 	}
-	
-    enableLink2(); 
+
 }
 
 $(window).ready(function() {
