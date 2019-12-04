@@ -259,7 +259,7 @@ function j4option1() {
 	
 	// determine ending
 	var finalCount = ending1 + ending2 + ending3 + ending4;
-	alert(finalCount);
+	//alert(finalCount);
 	if (finalCount == 0) {
 		if (Math.floor((Math.random() * 10) + 1) > 5) {
 			finalCount = 1;
@@ -287,7 +287,7 @@ function j4option2() {
 	
 	// determine ending
 	var finalCount = ending1 + ending2 + ending3 + ending4;
-	alert(finalCount);
+	//alert(finalCount);
 	if (finalCount == 0) {
 		if (Math.floor((Math.random() * 10) + 1) > 1) {
 			finalCount = 1;
